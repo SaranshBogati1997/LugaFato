@@ -1,0 +1,241 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+body {
+    background-color: rgb(247, 234, 236);
+}
+
+.headBar {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    width: 100%;
+    padding: 2em;
+    position: relative;
+    
+}
+
+
+
+#fato {
+    color: rgb(148, 214, 61);
+    font-weight: bolder;
+}
+
+
+
+#cart:hover {
+    color: rgb(43, 43, 43);
+}
+.td1{
+    width: 32px;
+    height: 32px;
+}
+
+table{
+    width: 100%;
+    height: auto;
+    border:1px dotted white;
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+th{
+    width: 25%;
+    height: 1em;
+}
+td img{
+    max-width: 50px;
+    max-height: 50px;
+}
+td a{
+    text-align: right;
+}
+#cart{
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    font-size: 2rem;
+}
+
+#cart:hover+ .cartmenu  {
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    border: 1px solid black;
+    color: white;
+    padding: 1.2em;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius:8px;
+}
+.cartmenu:hover{
+   
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: rgb(7, 7, 7);
+    color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 8px;
+}
+
+.cartmenu {
+    display: none;
+}
+.cartmenu ul{
+    margin-top: 1.5em;
+}
+.cartmenu ul li{
+    list-style-type: none;
+    padding: 0.25em;
+}
+
+.cartmenu h1{
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.cartmenu:hover{
+    opacity: 1;
+}
+
+
+.cartmenu button {
+   
+    position:absolute;
+    top: 90%;
+    left: 50px;
+   
+    width: 15em;
+    margin: auto;
+    
+   font-size: 1em;
+   
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.banner {
+    width: 100%;
+    height: auto;
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('images/men-banner.jpg'); */
+    background-size: cover;
+    background-attachment: scroll;
+    /* text-align: center; */
+    padding: 1em;
+    margin: 2em 0;
+    clip-path: polygon(51% 11%, 100% 0, 100% 63%, 50% 100%, 0 66%, 0 0);}
+.banner small{
+    font-size: 0.9em;
+}
+.banner form{
+    width: 50%;
+    margin: 0 auto;
+}
+#searchBtn{
+    width: 50%;
+    font-size: 1em;
+    font-weight: bold;
+}
+.banner p {
+    
+    font-size: 4em;
+    padding: 0 2em;
+    color: yellow;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(7, 7, 27);
+    
+}
+footer p{
+    line-height: 150px;
+    color: white;
+}
+
+.mainItems{
+    width: 80%;
+    margin:  1em auto;
+}
+.card span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+
+#ihead {
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+
+
+
+.removeBtn{
+    color: red;
+    float: right;
+    text-decoration: none;
+
+}
+
+
+h4{
+    margin-top: 1.5em;
+    color:rgb(78, 78, 78);
+    text-transform: uppercase;
+    
+}
+
+small{
+    padding: 1em auto;
+    color: rgb(16, 46, 71);
+}
+
+
+footer{
+    background-color: rgb(27, 27, 27);
+    height: auto;
+    margin-top: 6em;
+    }
+    footer ul{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 1em auto;
+    }
+    footer ul li{
+        list-style-type: none;
+        color: rgb(182, 182, 182);
+    }
+    .socials{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .socials a{
+        font-size: 1.5em;
+        color: white;
+        
+    }
+    
+    footer p{
+        color:white!important;
+    }

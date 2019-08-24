@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <div class="headBar navbar navbar-light navbar-expand-lg">
+        
+        <h1 class="text-danger ml-5 mt-5 font-weight-bold">LUGA <span id="fato" class="text-primary">FATO</span></h1>
+        <p id="cart"><i class="fas fa-shopping-cart text-success" id="yeet"></i></p>
+
+        <div class="cartmenu bg-light text-dark">
+            <h1 class="text-dark text-center ">Items</h1>
+            <table id="cartTable "> 
+                <thead>
+                    <tr>
+                        <th>image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <button id="clearCartBtn" class="btn font-weight-bold btn-danger text-center p-1">CLEAR CART</button>
+        </div>
+
+    </div>
+
+
+    <div class="banner bg-danger jumbotron text-center">
+        <p class="font-weight-bold text-light mb-0">Search your fit</p>
+        <small class="text-light text-center mt-0 mb-4">from the largest collection of Clothes, Shoes and accessories</small>
+        
+        <form class=" text-center mt-3">
+            <div class="form-group p-2">
+                <input type="text" name="name" id="search" 
+                class="form-control " placeholder="Eg. White Sneakers, Polo Tshirt">
+                <button  id="searchBtn" class="btn btn-outline-success text-light my-3 form-control">Show Results</button>
+            </div>
+        </form>
+   
+        
+
+    </div>
+    <h1 id="ihead" class="text-center font-weight-bold text-danger">ITEMS</h1>
+    
+    <div class="container text-center mainItems mt-5 items">
+
+        <div class="row  ">
+
+            <div class="col-md-4">
+                <div class="card bg-light" style="width: 22">
+                    <img src="./images/bluejeans.jpg" alt="bluejeans"
+                    class="card-img-top">
+                    <h4 class="card-title card-body font-weight-bold">Blue Jeans</h4>
+                    
+                    <div class="row">
+                        <h5 class="col-md-6 ">Rs 999</h5>
+                        <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                            <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                        <small class="mt-2">4 reviews</small></div>
+                       
+                    </div>
+                    
+                    <button class=" btn btn-primary m-2">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                    <div class="card bg-light" style="width: 22">
+                        <img src="./images/trou.jpg" alt="trousers"
+                        class="card-img-top">
+                        <h4 class="card-title card-body font-weight-bold">Trousers</h4>
+                        
+                        <div class="row">
+                            <h5 class="col-md-6 ">Rs 999</h5>
+                            <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                            <small class="mt-2">4 reviews</small></div>
+                           
+                        </div>
+                        
+                        <button class=" btn btn-primary m-2">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                        <div class="card bg-light" style="width: 22">
+                            <img src="./images/slim.jpg" alt="slim"
+                            class="card-img-top">
+                            <h4 class="card-title card-body font-weight-bold">Slim-fit Pants</h4>
+                            
+                            <div class="row">
+                                <h5 class="col-md-6 ">Rs 999</h5>
+                                <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                    <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                <small class="mt-2">4 reviews</small></div>
+                               
+                            </div>
+                            
+                            <button class=" btn btn-primary m-2">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    
+        
+        </div>
+        
+        <div class="row shirts my-5">
+                <div class="col-md-4">
+                        <div class="card bg-light" style="width: 22rem">
+                            <img src="images/polo.jpg" alt="polo"
+                            class="card-img-top">
+                            <h4 class="card-title card-body font-weight-bold">Polo T-shirt</h4>
+                            
+                            <div class="row">
+                                <h5 class="col-md-6 ">Rs 999</h5>
+                                <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                    <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                <small class="mt-2">4 reviews</small></div>
+                               
+                            </div>
+                            
+                            <button class=" btn btn-primary m-2">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                            <div class="card bg-light" style="width: 22rem">
+                                <img src="./images/plain.jpg" alt="bluejeans"
+                                class="card-img-top">
+                                <h4 class="card-title card-body font-weight-bold">Plain Tshirt</h4>
+                                
+                                <div class="row">
+                                    <h5 class="col-md-6 ">Rs 999</h5>
+                                    <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                        <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                    <small class="mt-2">4 reviews</small></div>
+                                   
+                                </div>
+                                
+                                <button class=" btn btn-primary m-2">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                                <div class="card bg-light" style="width: 22rem">
+                                    <img src="./images/printed.jpg" alt="bluejeans"
+                                    class="card-img-top">
+                                    <h4 class="card-title card-body font-weight-bold">Printed Shirt</h4>
+                                    
+                                    <div class="row">
+                                        <h5 class="col-md-6 ">Rs 999</h5>
+                                        <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                            <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                        <small class="mt-2">4 reviews</small></div>
+                                       
+                                    </div>
+                                    
+                                    <button class=" btn btn-primary m-2">Add to Cart</button>
+                                </div>
+                            </div>
+        </div>
+
+        <div class="row shoes">
+                <div class="col-md-4">
+                        <div class="card bg-light" style="width: 22">
+                            <img src="./images/kalo.jpg" alt="black shoes"
+                            class="card-img-top">
+                            <h4 class="card-title card-body font-weight-bold">Blue Jeans</h4>
+                            
+                            <div class="row">
+                                <h5 class="col-md-6 ">Rs 999</h5>
+                                <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                    <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                <small class="mt-2">4 reviews</small></div>
+                               
+                            </div>
+                            
+                            <button class=" btn btn-primary m-2">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="card bg-light" style="width: 22">
+                                <img src="./images/nilo.jpg" alt="blue shoes"
+                                class="card-img-top">
+                                <h4 class="card-title card-body font-weight-bold">Blue Jeans</h4>
+                                
+                                <div class="row">
+                                    <h5 class="col-md-6 ">Rs 999</h5>
+                                    <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                        <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                    <small class="mt-2">4 reviews</small></div>
+                                   
+                                </div>
+                                
+                                <button class=" btn btn-primary m-2">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card bg-light" style="width: 22">
+                                    <img src="./images/loafer.jpg" alt="loafer"
+                                    class="card-img-top">
+                                    <h4 class="card-title card-body font-weight-bold">Blue Jeans</h4>
+                                    
+                                    <div class="row">
+                                        <h5 class="col-md-6 ">Rs 999</h5>
+                                        <div class="col-md-6" style="display: flex; flex-direction:column"> 
+                                            <img src="./images/stars.png" alt=""  style="height:0.8rem;max-width:7rem;">
+                                        <small class="mt-2">4 reviews</small></div>
+                                       
+                                    </div>
+                                    
+                                    <button class=" btn btn-primary m-2">Add to Cart</button>
+                                </div>
+                            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <footer class="text-center p-3">
+            <h3 class="text-primary">Contact Me</h3>
+            <ul>
+                <li>+977-9849252535</li>
+                <li>saranshbogati1997@gmail.com</li>
+            </ul>
+            <div class="socials"><ul>
+                <li><a href="https://github.com/SaranshBogati1997" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/SaranshBogatiKoProfile" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/sarnsh/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/saransh-bogati-768356186/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul></div>
+            
+        
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
